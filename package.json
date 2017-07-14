@@ -1,0 +1,25 @@
+{
+  "name": "ism",
+  "version": "0.0.1",
+  "description": "Site Instituto Sandro Moura",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?"
+  },
+  "author": "W2D Comunicacao",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-watch": "^4.3.11",
+    "path": "^0.12.7"
+  }
+}
