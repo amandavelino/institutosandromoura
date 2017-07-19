@@ -1,7 +1,9 @@
 @import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 @import '../bower_components/breakpoint-sass/stylesheets/breakpoint';
 @import '../bower_components/font-awesome-sass/assets/stylesheets/font-awesome';
-
+@import '../bower_components/owl.carousel/dist/assets/owl.carousel.min.css';
+//@import '../bower_components/owl.carousel/dist/assets/owl.theme.default.min.css';
+@import '../bower_components/animate.css/animate.min.css';
 
 @import 'variables';
 @import 'geral'; 
@@ -10,3 +12,4 @@
 @import 'metodologia';
 @import 'aulas';
 @import 'assinatura';
+@import 'depoimentos';

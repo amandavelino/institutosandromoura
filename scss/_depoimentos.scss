@@ -1,0 +1,93 @@
+#depoimentos
+{
+    padding: 10em 0;
+
+    background-image: url("../img/depoimento.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    width: 100%;
+    // height: 100%;
+    overflow: hidden; //hidden
+    position: relative;   
+}
+
+.owl-depoimentos 
+{
+
+    .item 
+    {
+        @include make-row();
+    }
+
+    .item-midia
+    {
+        @include make-lg-column(7);
+        @include make-lg-column-push(11);
+    }
+
+    .item-conteudo 
+    {
+        @include make-lg-column(10);
+        @include make-lg-column-pull(7);
+
+        h2 
+        {
+            color: $backgroundColorPrimary;
+            font-size: $fontSizeBase * 3.2;
+            margin-top: 0;
+        }
+
+        p 
+        {
+            color: $backgroundColorPrimary;
+        }
+
+    }
+
+    .owl-dots,
+    .owl-nav
+    {
+        text-align: center;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .owl-nav.disabled + .owl-dots
+    {
+        margin-top: 10px;
+    }    
+
+    .owl-dot 
+    {
+
+        text-align: center;
+        display: inline-block;
+
+        span 
+        {
+            border-radius: $radius100;
+            width: 10px;
+            height: 10px;
+            margin: 5px 8px;
+            background: #fff;
+            display: block;
+            visibility: visible;
+            transition: all .2s ease-in-out;
+        }
+
+        &.active,
+        &:hover  
+        {
+            span 
+            {
+                background-color: #fff;
+                transform: scale(2);
+                display: block;
+                //margin: 0;
+            }
+        }
+
+    } 
+
+}
