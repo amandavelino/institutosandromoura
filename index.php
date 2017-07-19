@@ -16,6 +16,7 @@
     <?php include("./incs/aulas.php");?>
     <?php include("./incs/assinatura.php");?>
     <?php include("./incs/depoimentos.php");?>
+    <?php include("./incs/parceiros.php");?>
 
     <script src="./bower_components/jquery/dist/jquery.min.js"></script>
     <script src="./bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
