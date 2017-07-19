@@ -1,0 +1,130 @@
+#assinatura
+{
+
+    padding: 6em 0;
+
+    article
+    {
+        background-color: $backgroundColorPrimary; 
+        padding: 5em 0 3em;
+        text-align: center;
+        @include make-lg-column(6);
+        transition: .5s background-color ease-in-out;
+
+        .btn-enviar 
+        {
+            margin: 1em auto;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+
+        &:hover
+        {
+            background-color: $backgroundColorSecondary;
+        }
+
+    }
+
+    header 
+    {
+        &:before 
+        {
+            background-color: $terciaryColor;
+            content: "";
+            display: block;
+            height: 2px;
+            margin: 0 auto; 
+            width: 30%; 
+        }
+    }    
+
+    h2 
+    {
+        text-transform: uppercase;
+        font-size: $fontSizeBase * 3;
+    }
+
+    aside 
+    {
+        position: relative;
+        padding-bottom: 5em;
+
+        h4 
+        {
+            font-size: $fontSizeBase * 6;
+            text-transform: uppercase;
+            line-height: 1em;
+            @extend .reset-margin-padding;
+
+            span 
+            {
+                font-size: 50%;
+                position: relative;
+                top: -20px;
+            }
+
+        }
+
+        em 
+        {
+            font-style: normal;
+            font-size: $fontSizeBase * 1.7;
+        }
+
+        .badget 
+        {
+            background-color: $backgroundColorTerciary;
+            border-radius: $radius100;
+            color: $backgroundColorPrimary;
+            display: inline-block;
+            font-size: 1.5em;
+            line-height: 1em;
+            width: 40px;
+            height: 37px;
+            padding: 10px 0;
+            box-sizing: border-box;
+            text-align: center;
+            margin-top: -8px;
+            margin-left: 10px;            
+        }
+
+    }
+
+    ul 
+    {
+        list-style: none;
+        @extend .reset-margin-padding;
+
+        li 
+        {
+            list-style: inherit;
+            padding: 1em 0;
+
+            p 
+            {
+                margin: 0 0 1em 0;
+            }
+
+            &:after 
+            {
+                background-color: $quaternaryColor;
+                content: "";
+                display: block;
+                width: 50%;
+                height: 2px;
+                margin: 0 auto;
+            }
+
+        }
+
+    }
+
+    .cbadget 
+    {
+        ul 
+        {
+            margin-top: -8px;
+        }
+    }
+
+}

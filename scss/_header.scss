@@ -1,0 +1,18 @@
+header#principal
+{
+    @include make-row();
+    padding: 5em 0;
+
+    .btn-geral
+    {
+        @include make-lg-column(3); 
+        @include make-lg-column-offset(10);
+    }
+}
+
+#logo
+{
+    @include make-lg-column(5);
+    line-height: 1em;
+    margin: 0;
+}

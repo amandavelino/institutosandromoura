@@ -1,12 +1,37 @@
+//Background Colors
+$backgroundColorPrimary: #fff;
+$backgroundColorSecondary: #ebebeb;
+$backgroundColorTerciary: #e03626;
+
 //Cores
 $primaryColor: #efc913; 
-$secondaryFont: #ccc;
+$secondaryColor: #ccc;
+$terciaryColor: #303030;
+$quaternaryColor: #d3d3d3;
 
 //Fontes
 $primaryFont: "cardea-lining","Georgia","Times New Roman",serif;
 $secondaryFont: "mr-eaves-xl-sans","Arial Black", Gadget, sans-serif;
 $primaryWeight: 400;
-$secondaryWeight: 700; //cardea bold e mr-eaves
+$secondaryWeight: 700; //cardea bold + mr-eaves
+$fontSizeBase: 10px;
+$fontSizeBtn: 20px;
+
+//Botoes
+$bgColorPadrao: #57575c;
+$radiusPadrao  : 8px;
+$radius100: 100%;
+$paddingBtn: 15px 35px;
+
+//Grids
+$new-columns: 18;
+$new-gutter-width: 20px;
+
+$grid-columns: $new-columns;
+$grid-gutter-width: $new-gutter-width;
+
+//Medidas
+$paddingColumn: $grid-gutter-width;
 
 //Media Queries
 $smallCelular: 0 480px;

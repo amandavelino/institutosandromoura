@@ -1,0 +1,33 @@
+#aulas
+{
+
+    background-color: $backgroundColorSecondary;
+    padding: 3em 0 5em;
+
+    header 
+    {
+        padding: 2em 0 6em;
+        text-align: center;
+
+        h2 
+        {
+            @extend .reset-margin-padding;
+        }
+
+    }
+
+    .item-aula
+    {
+        text-align: center;
+    }
+
+    h3 
+    {
+        @extend .reset-margin-padding;
+    }
+
+    article
+    {
+        @include make-lg-column(6);
+    }
+}

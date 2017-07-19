@@ -1,0 +1,83 @@
+#home
+{
+    background-image: url("../img/sandrocover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden; //hidden
+    position: relative;
+}
+
+.formularioInscricao
+{
+    @include make-row();
+
+    h3 
+    {
+        color: $backgroundColorPrimary;
+        font-family: $secondaryFont;
+        font-weight: $secondaryWeight;
+        font-size: $fontSizeBase * 3;
+    }
+
+    strong
+    {
+        color: $primaryColor;
+    }
+
+    p 
+    {
+        color: $backgroundColorPrimary;
+        font-family: $secondaryFont;
+        font-size: $fontSizeBase * 1.7;
+        line-height: 1.2em;
+        margin: 0 0 .5em 0;
+    }
+
+    #inscricao
+    {
+        background-color: rgba(0,0,0,.7);
+        @include make-lg-column(6);
+        @include make-lg-column-offset(12);
+    }
+
+    fieldset
+    {
+        padding: 0;
+        border: 0 none;
+        padding: 0 2em 4em;
+    }
+
+    label 
+    {
+        display: block;
+        margin: 3em 0;
+    }
+
+    input
+    {
+        border: 0;
+        color: #111;
+        width: 100%;
+        outline: none;
+
+        &:focus
+        {
+            outline: none;
+        }
+
+        &[type=text], &[type=email]
+        {
+            font-size: $fontSizeBase * 1.5;
+            font-family: $secondaryFont;
+            font-weight: $secondaryWeight;
+            line-height: 1em;            
+            padding: .8em;
+        } 
+
+    }
+
+}

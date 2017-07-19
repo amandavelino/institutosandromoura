@@ -1,0 +1,75 @@
+#metodologia
+{
+
+    padding: 6em 0;
+
+    .row
+    {
+        padding: 0 0 8em;
+
+        &.metodosLista
+        {
+            padding: 0;
+        }        
+    }
+
+    article
+    {
+         @include make-lg-column(8);
+
+         &.midia
+         {
+              @include make-lg-column(10);
+         }
+
+    }
+
+    h2 
+    {
+        color: $terciaryColor;
+        font-family: $secondaryFont;
+        font-size: $fontSizeBase * 3;
+        line-height: 1em;
+        padding: .5em 0 0;
+    }
+
+    p 
+    {
+        color: $terciaryColor;
+        font-size: $fontSizeBase * 1.7;
+        line-height: 1.5em;
+    }
+}
+
+#metodos
+{
+
+    margin: 0;
+    padding: 0;
+    @include make-row();
+
+    li 
+    {
+        @include make-lg-column(6);
+        list-style: none;
+        height: 70px;
+        margin-bottom: $paddingColumn * 3;
+    }
+
+    .icon 
+    {
+        float: left;
+        padding-top: .8em;
+        padding-right: $paddingColumn;
+    }
+
+    h3 
+    {
+        font-family: $secondaryFont;
+        font-size: $fontSizeBase * 2.4;
+        line-height: 1.5em;
+        margin: 0;
+        padding: 0;
+    }
+
+}

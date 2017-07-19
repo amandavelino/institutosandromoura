@@ -1,0 +1,81 @@
+html, body
+{ 
+    font-family: $primaryFont;
+    font-size: $fontSizeBase;
+    font-weight: $primaryWeight;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+
+    color: $terciaryColor;
+
+    h1, h2, h3, h4, h5, h6 
+    {
+        font-family: $secondaryFont;
+        font-weight: $secondaryWeight;
+        line-height: 1.5em;
+    }
+
+    h2
+    {
+        color: $terciaryColor;
+        font-size: $fontSizeBase * 3;
+    }
+
+    h3 
+    {
+        font-size: $fontSizeBase * 2.4;   
+    }
+
+    p 
+    {
+        font-size: $fontSizeBase * 1.7;
+        margin: 0 0 1.2em 0;
+    }
+
+    a, a:hover, a:visited 
+    {
+        text-decoration: none;
+    }
+
+    .btn 
+    {
+        background-color: $bgColorPadrao;
+        border-radius: $radiusPadrao;
+        color: $terciaryColor;
+        font-family: $secondaryFont;
+        font-weight: $secondaryWeight; 
+        font-size: $fontSizeBtn;  
+        text-align: center; 
+        line-height: 1em;    
+    }
+
+    .btn-geral
+    {
+        @extend .btn;
+        color: $backgroundColorPrimary;
+        padding: $paddingBtn;
+    }
+
+    .btn-enviar
+    {
+        @extend .btn;
+        background-color: $primaryColor;
+        font-size: $fontSizeBase * 2.5;
+        margin: 1em 0 0;
+        padding: .4em 2em;
+        margin: 0 auto;
+        display: table;
+    }
+
+    .reset-margin-padding
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+}
