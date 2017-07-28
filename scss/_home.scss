@@ -16,6 +16,12 @@
     overflow: hidden;
     width: 100%;
 
+    @include breakpoint(max-width $largeDesktop) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
     h3 
     {
         color: $backgroundColorPrimary;
@@ -40,8 +46,9 @@
 
     .inscricao
     {
-        background-color: rgba(0,0,0,.7);
+        @include make-md-column(18);
         @include make-lg-column(6);
+        background-color: rgba(0,0,0,.7);
         float: right !important;
     }
 

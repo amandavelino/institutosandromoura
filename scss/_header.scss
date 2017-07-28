@@ -2,18 +2,24 @@ header#principal
 {
     
     padding: 5em 0;
+    position: relative;
     overflow: hidden;
 
     .btn-geral
     {
-        @include make-lg-column(3); 
+        @include make-md-column(5);
+        @include make-lg-column(3);
         float: right !important;
+        margin: 1.1em 0;
     }
+
 }
 
 #logo
 {
+    @include make-md-column(8);
     @include make-lg-column(5);
+    
     line-height: 1em;
     padding: 0;
     margin: 0;
