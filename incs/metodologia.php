@@ -4,7 +4,7 @@
         
         <div class="aula-metodologia">
 
-            <div class="row">
+            <div class="container-row">
 
                 <article>
 
@@ -26,9 +26,9 @@
 
                 </article>
 
-            </div><!-- row -->
+            </div><!-- container-row -->
 
-            <div class="row">
+            <div class="container-row">
 
                 <article class="midia">
                     <picture>
@@ -48,11 +48,11 @@
 
                 </article>
 
-            </div<!-- row -->
+            </div><!-- container-row -->
 
         </div><!-- aula-metodologia -->
 
-        <div class="row metodosLista">
+        <div class="container-row metodosLista">
 
             <ul id="metodos">
 

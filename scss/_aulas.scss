@@ -19,6 +19,15 @@
     .item-aula
     {
         text-align: center;
+
+        figure 
+        {
+            img 
+            {
+                max-width: 100%;
+            }
+        }
+
     }
 
     h3 

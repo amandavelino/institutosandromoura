@@ -3,7 +3,7 @@
     background-image: url("../img/sandrocover.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 0%;
 
     width: 100%;
     height: 100%;
@@ -13,7 +13,8 @@
 
 .formularioInscricao
 {
-    @include make-row();
+    overflow: hidden;
+    width: 100%;
 
     h3 
     {
@@ -37,11 +38,11 @@
         margin: 0 0 .5em 0;
     }
 
-    #inscricao
+    .inscricao
     {
         background-color: rgba(0,0,0,.7);
         @include make-lg-column(6);
-        @include make-lg-column-offset(12);
+        float: right !important;
     }
 
     fieldset
@@ -60,7 +61,7 @@
     input
     {
         border: 0;
-        color: #111;
+        color: $fifthColor;
         width: 100%;
         outline: none;
 

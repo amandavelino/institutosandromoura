@@ -3,7 +3,7 @@
 
     padding: 6em 0;
 
-    .row
+    .container-row
     {
         padding: 0 0 8em;
 
@@ -19,7 +19,7 @@
 
          &.midia
          {
-              @include make-lg-column(10);
+            @include make-lg-column(10);
          }
 
     }

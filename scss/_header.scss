@@ -1,12 +1,13 @@
 header#principal
 {
-    @include make-row();
+    
     padding: 5em 0;
+    overflow: hidden;
 
     .btn-geral
     {
         @include make-lg-column(3); 
-        @include make-lg-column-offset(10);
+        float: right !important;
     }
 }
 
@@ -14,5 +15,6 @@ header#principal
 {
     @include make-lg-column(5);
     line-height: 1em;
+    padding: 0;
     margin: 0;
 }

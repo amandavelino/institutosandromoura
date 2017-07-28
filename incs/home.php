@@ -3,6 +3,7 @@
     <div class="container">
         
         <header id="principal">
+
             <h1 id="logo">
                 <a href="#" title="Instituto Sandro Moura">
                     <svg width="334" height="90">
@@ -11,10 +12,12 @@
                 </a>                  
             </h1><!-- logo -->
             <a href="#" class="btn-geral">Assistir às aulas</a>
+
         </header><!-- principal -->
 
         <div class="formularioInscricao">
-            <form id="inscricao">
+            
+            <form id="inscricao" class="inscricao">
 
                     <fieldset>
                         <h3>Inicie já seu <strong>mês gratuíto</strong></h3>

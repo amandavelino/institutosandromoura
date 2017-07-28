@@ -1,7 +1,7 @@
 html, body
 { 
     font-family: $primaryFont;
-    font-size: $fontSizeBase;
+    font-size: $fontSizeBase !important;
     font-weight: $primaryWeight;
     margin: 0;
     padding: 0;
@@ -12,6 +12,7 @@ html, body
 body {
 
     color: $terciaryColor;
+    font-size: $fontSizeBase;
 
     h1, h2, h3, h4, h5, h6 
     {
@@ -40,6 +41,11 @@ body {
     a, a:hover, a:visited 
     {
         text-decoration: none;
+    }
+
+    .container-row
+    {
+        @include make-row();
     }
 
     .btn 
@@ -78,5 +84,10 @@ body {
         padding: 0;
     }
 
-}
+    section 
+    {
+        position: relative;
+        overflow: hidden;
+    }
 
+}

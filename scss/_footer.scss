@@ -1,0 +1,182 @@
+#footer
+{
+    padding: 6em 0;
+    background-image: url("../img/sandrofooter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%; 
+
+    width: 100%;
+    overflow: hidden;//hidden
+    position: relative;     
+
+    * 
+    {
+        color: $backgroundColorPrimary;
+    }
+
+    p 
+    {
+        font-weight: $primaryWeight;
+    }
+
+    .cont-int
+    {
+        @include make-row();
+    }
+
+    .duvidas 
+    {
+        @include make-lg-column(4);
+
+        h3 
+        {
+            font-size: $fontSizeBase * 3.2; 
+            margin: 0 0 1em 0;
+            padding: 0;
+        }
+
+        p 
+        {
+            font-size: $fontSizeBase * 1.9;
+        }
+
+        .txt-icon 
+        {
+            overflow: hidden;
+
+            i 
+            {
+                float: left;
+                padding: 0 .5em 0 0;                
+            }
+
+            p 
+            {
+                float: left;
+            }
+
+        }
+
+    }
+
+    .ft-geral
+    {
+        @include make-lg-column(3); 
+
+        h4 
+        {
+            font-size: $fontSizeBase * 2;
+            margin: 0 0 .5em 0;
+            padding: 0;
+        }
+
+        ul 
+        {
+            list-style: none;
+            margin: 2em 0 0 2em;
+            padding: 0;
+        }
+
+        li 
+        {
+            font-size: $fontSizeBase * 1.6;
+            margin: 0 0 1em 0;
+        }
+
+    }
+
+    .formularioInscricao
+    {
+        background-color: rgba(0,0,0,.7);
+        @include make-lg-column(5);
+
+        h3 
+        {
+            font-size: $fontSizeBase * 2.5;
+        }
+
+        p 
+        {
+            font-size: $fontSizeBase * 1.7;
+        }
+
+        .inscricao
+        {
+            background-color: transparent;
+            margin-left: 0;  
+            width: 100%;         
+        }
+
+        fieldset
+        {
+            padding: 0 1em 4em;
+        }
+
+        input 
+        {
+            color: $fifthColor;
+        }
+
+    }
+
+    .ft-bottom
+    {
+        text-align: center;
+
+        .redes-sociais 
+        {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+
+            li 
+            {
+                background-color: $backgroundColorPrimary;
+                border-radius: $radius100;
+                box-sizing: border-box;
+                padding: .5em;
+                display: inline-block;
+                margin: 0 2em;
+                width: 30px;
+                height: 30px;
+
+                * 
+                {
+                    color: $fifthColor;
+                }
+
+            }
+
+        }
+
+        hr 
+        {
+            display: block;
+            margin: 1em auto;
+            padding: 0;
+            width: 60%;
+        }
+
+        p 
+        {
+            font-size: $fontSizeBase * 1.4;
+            line-height: 1.8em;
+        }
+
+    }
+
+    .madeBy
+    {
+        float: right;
+        text-align: right;
+        padding-right: $fontSizeBase * 2;
+
+        p 
+        {
+            font-size: $fontSizeBase * 1.4;
+        }
+
+    }
+
+}
