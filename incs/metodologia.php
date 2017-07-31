@@ -28,9 +28,25 @@
 
             </div><!-- container-row -->
 
+        </div><!-- aula-metodologia -->
+
+    </div><!-- container -->
+
+    <aside class="img-midia-tablet">
+        <article class="midia"> 
+            <picture>
+                <img class="img-responsive" src="./img/sandroMetodologia.jpg" alt="Metodologia paerfeiçoada com a prática" border="0">
+            </picture>
+        </article><!-- end .midia -->       
+    </aside>
+
+    <div class="container">
+
+        <div class="aula-metodologia">
+
             <div class="container-row">
 
-                <article class="midia">
+                <article class="midia"> 
                     <picture>
                         <img class="img-responsive" src="./img/sandroMetodologia.jpg" alt="Metodologia paerfeiçoada com a prática" border="0">
                     </picture>
