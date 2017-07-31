@@ -9,6 +9,12 @@
     height: 100%;
     overflow: hidden; //hidden
     position: relative;
+
+    @include breakpoint(max-width ($tabletPortrait - 1)) {
+        height: auto;
+        padding-bottom: 5em;
+    }
+
 }
 
 .formularioInscricao
@@ -16,10 +22,56 @@
     overflow: hidden;
     width: 100%;
 
-    @include breakpoint(max-width $largeDesktop) {
+    @include breakpoint(max-width ($largeDesktop - 1)) {
         position: absolute;
         left: 0;
         bottom: 0;
+        width: 100%;
+        float: none;
+    }
+
+    @include breakpoint(max-width ($tabletPortrait - 1)) {
+        position: relative;
+    }
+
+    .inscricao
+    {
+        @include make-md-column(18);
+        @include make-lg-column(6);
+        background-color: rgba(0,0,0,.7);
+        float: right !important;
+
+        @include breakpoint(max-width ($largeDesktop - 1)) {
+            width: 100%;
+        }
+
+        @include breakpoint(max-width ($celularPortrait - 1)) {
+            padding: 0;
+        }
+    }
+
+    fieldset
+    {
+        padding: 0;
+        border: 0 none;
+        padding: 0 2em 4em;
+
+        @include breakpoint(max-width ($celularPortrait - 1)) {
+            padding: 0 1em 4em;
+        }        
+    }
+
+    .box-form 
+    { 
+        @include breakpoint(max-width ($largeDesktop - 1)) {
+           @include make-sm-column(9);
+           @include make-md-column(9);
+        }           
+
+        @include breakpoint(max-width ($tabletPortrait - 1)) {
+           padding-left: 0;
+           padding-right: 0;
+        }         
     }
 
     h3 
@@ -28,6 +80,16 @@
         font-family: $secondaryFont;
         font-weight: $secondaryWeight;
         font-size: $fontSizeBase * 3;
+        line-height: 1em;
+
+        @include breakpoint(max-width ($tabletPortrait - 1)) {
+            font-size: $fontSizeBase * 2.8;
+        }    
+
+        @include breakpoint(max-width ($celularPortrait - 1)) {
+            font-size: $fontSizeBase * 2.4;
+        }         
+
     }
 
     strong
@@ -42,21 +104,6 @@
         font-size: $fontSizeBase * 1.7;
         line-height: 1.2em;
         margin: 0 0 .5em 0;
-    }
-
-    .inscricao
-    {
-        @include make-md-column(18);
-        @include make-lg-column(6);
-        background-color: rgba(0,0,0,.7);
-        float: right !important;
-    }
-
-    fieldset
-    {
-        padding: 0;
-        border: 0 none;
-        padding: 0 2em 4em;
     }
 
     label 
@@ -85,6 +132,21 @@
             line-height: 1em;            
             padding: .8em;
         } 
+
+        &.btn-enviar
+        {
+            @include breakpoint(max-width ($largeDesktop - 1)) {
+                width: 300px;
+                max-width: 100%;
+                margin: 0 auto;
+                float: none;
+            }      
+            
+            @include breakpoint(max-width ($tabletPortrait - 1)) {
+                width: 100%;
+            }                
+
+        }
 
     }
 

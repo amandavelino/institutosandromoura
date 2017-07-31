@@ -5,22 +5,53 @@ header#principal
     position: relative;
     overflow: hidden;
 
+    @include breakpoint(max-width ($tabletPortrait - 1)) {
+        text-align: center;
+    }
+
     .btn-geral
     {
+        @include make-sm-column(5);
         @include make-md-column(5);
         @include make-lg-column(3);
         float: right !important;
         margin: 1.1em 0;
+
+        @include breakpoint(max-width ($tabletPortrait - 1)) {
+            display: inline-block;
+            float: none !important;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+
     }
 
 }
 
 #logo
 {
+    @include make-sm-column(8);
     @include make-md-column(8);
     @include make-lg-column(5);
     
     line-height: 1em;
     padding: 0;
     margin: 0;
+
+    a 
+    {
+        display: block;
+    }
+
+    svg
+    {
+        width: 350px;
+        height: auto;  
+        max-width: 100%;             
+
+        @include breakpoint(max-width ($tabletPortrait - 1)) {
+            width: 280px; 
+        }             
+    }
+
 }
