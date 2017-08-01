@@ -4,14 +4,27 @@
     background-color: $backgroundColorSecondary;
     padding: 3em 0 5em;
 
+    @include breakpoint(0 $tabletPortrait) {
+        padding: 4em 0;
+    }      
+
     header 
     {
-        padding: 2em 0 6em;
+        padding: 2em 0 3em;
         text-align: center;
+
+        @include breakpoint(0 $tabletPortrait) {
+            padding-bottom: 1em;
+        }   
 
         h2 
         {
             @extend .reset-margin-padding;
+            @include breakpoint(0 $tabletPortrait) {
+                font-size: $fontSizeBase * 2.7;
+                line-height: 1em;
+            } 
+
         }
 
     }
@@ -32,11 +45,48 @@
 
     h3 
     {
-        @extend .reset-margin-padding;
+        margin: 0 0 .5em 0;
+        line-height: 1em;
+        @include breakpoint(0 $tabletPortrait) {
+            margin-top: 3em;
+        }   
+
     }
 
     article
     {
+        @include make-xs-column(18);
+        @include make-sm-column(6);
+        @include make-md-column(6);
         @include make-lg-column(6);
+
+        figure 
+        {
+            @include breakpoint(0 $tabletPortrait) {
+                width: 50%;
+                float: left;
+            }  
+
+            @include breakpoint(0 660px) {
+                width: 100%;
+            }             
+        }
+
+        .txt-artigo
+        {
+            padding: 0 1em;
+            margin-bottom: -1em;
+        }
+
+        &.md
+        {
+            figure 
+            {
+                @include breakpoint(0 $tabletPortrait) {
+                    float: right;
+                }  
+            }
+        }        
+
     }
 }

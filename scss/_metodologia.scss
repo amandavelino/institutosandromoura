@@ -21,7 +21,7 @@
 
         &.metodosLista
         {
-            padding: 0;
+            padding: 0 1em;
 
             @include breakpoint(0 $allDesktop) {
                 padding-top: 5em;
@@ -121,6 +121,8 @@
         
         @include breakpoint(0 660px) {
             width: 100%;
+            height: auto;
+            margin-bottom: .5em;
         }
 
         svg,
