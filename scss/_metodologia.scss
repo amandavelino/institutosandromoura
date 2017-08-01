@@ -37,14 +37,15 @@
     aside.img-midia-tablet
     {
         display: none;
+        overflow: hidden;
 
         @include breakpoint(0 $allDesktop) {
             display: block;
-            margin: 5em 0 6em;
+            margin: 2em 0 3em;
         }
 
         @include breakpoint(0 $celularPortrait) {
-            margin: 3em 0 4em
+            margin: 3em 0 4em;
         }
 
         article.midia 
@@ -58,6 +59,10 @@
         @include make-md-column(8); 
         @include make-lg-column(8);
 
+        @include breakpoint(0 $allDesktop) {
+            width: 100%;
+        }   
+
          &.midia
          {
             @include make-md-column(10);
@@ -65,6 +70,7 @@
 
             @include breakpoint(0 $allDesktop) {
                 padding: 4em 0 0;
+                width: 100%;
             }
          }
 

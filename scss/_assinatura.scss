@@ -8,17 +8,52 @@
         background-color: $backgroundColorPrimary; 
         padding: 5em 0 3em;
         text-align: center;
-        @include make-lg-column(6);
         transition: .5s background-color ease-in-out;
+        @include make-sm-column(18);
+        @include make-md-column(6);
+        @include make-lg-column(6);
+
+        @include breakpoint(0 $largeDesktop) {
+            padding: 3em 0 1em;
+        } 
+
+        .cabecalho-assinatura
+        {
+            @include breakpoint(0 ($allDesktop - 1)) {
+                width: 50%;
+                float: left;
+            }   
+        }   
+        
+        ul 
+        {
+            @include breakpoint(0 ($allDesktop - 1)) {
+                width: 50%;
+                float: right;
+                margin-bottom: 2em;
+            }  
+        }
 
         .btn-enviar 
         {
             margin: 1em auto;
             padding-left: 1.5em;
             padding-right: 1.5em;
+
+            @include breakpoint(0 $largeDesktop) {
+                font-size: $fontSizeBase * 2.3;
+            } 
+
+            @include breakpoint(0 ($allDesktop - 1)) {
+                clear: both;
+                width: 300px;
+                max-width: 100%;
+                float: none;
+            }              
+                        
         }
 
-        &:hover
+        &.destaque
         {
             background-color: $backgroundColorSecondary;
         }
@@ -41,6 +76,9 @@
     h2 
     {
         text-transform: uppercase;
+        @include breakpoint(0 $largeDesktop) {
+            font-size: $fontSizeBase * 2.8;
+        }           
     }
 
     aside 
