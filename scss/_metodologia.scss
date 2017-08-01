@@ -4,20 +4,33 @@
     padding: 6em 0;
 
     @include breakpoint(0 $allDesktop) {
-        padding: 3.5em 0;
+        padding: 4em 0 6em;
     }
+
+    @include breakpoint(0 $celularPortrait) {
+        padding: 3em 0;
+    }    
 
     .container-row
     {
-        padding: 0 0 8em;
+        padding: 0 0 8em;      
 
         @include breakpoint(0 $allDesktop) {
             padding: 0;
-        }        
+        }          
 
         &.metodosLista
         {
             padding: 0;
+
+            @include breakpoint(0 $allDesktop) {
+                padding-top: 5em;
+            }  
+
+            @include breakpoint(0 660px) {
+               padding: 2em 1em;
+            } 
+
         }        
     }
 
@@ -28,6 +41,10 @@
         @include breakpoint(0 $allDesktop) {
             display: block;
             margin: 5em 0 6em;
+        }
+
+        @include breakpoint(0 $celularPortrait) {
+            margin: 3em 0 4em
         }
 
         article.midia 
@@ -70,6 +87,11 @@
         font-size: $fontSizeBase * 3;
         line-height: 1em;
         margin: .5em 0;
+
+        @include breakpoint(0 $celularPortrait) {
+            font-size: $fontSizeBase * 2.6;
+        }         
+
     }
 
     p 
@@ -89,12 +111,30 @@
 
     li 
     {
+        @include make-xs-column(9);
         @include make-sm-column(9);
         @include make-md-column(6);
         @include make-lg-column(6);
         list-style: none;
         height: 70px;
         margin-bottom: $paddingColumn * 3;
+        
+        @include breakpoint(0 660px) {
+            width: 100%;
+        }
+
+        svg,
+        image 
+        {
+            width: 55px;
+            height: auto;
+
+            @include breakpoint(0 660px) {
+                width: 50px;
+            }
+
+        }  
+
     }
 
     .icon 
@@ -108,9 +148,16 @@
     {
         font-family: $secondaryFont;
         font-size: $fontSizeBase * 2.4;
-        line-height: 1.5em;
+        line-height: 1.2em;
         margin: 0;
         padding: 0;
+
+        @include breakpoint(0 660px) {
+            font-size: $fontSizeBase * 2.1;
+            line-height: 1em;
+            margin: 0 0 .5em 0;
+        } 
+
     }
 
 }

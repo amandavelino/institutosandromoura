@@ -74,8 +74,8 @@
 
                 <li>
                     <div class="icon">
-                        <svg width="55" height="70">
-                            <image xmlns:xlink="./img/rudimentos.svg" xlink:href="./img/rudimentos.svg" src="./img/rudimentos.png" width="55" height="70"></image>
+                        <svg viewBox="0 0 55 80" preserveAspectRatio="xMidYMid meet">
+                            <image xmlns:xlink="./img/rudimentos.svg" xlink:href="./img/rudimentos.svg" src="./img/rudimentos.png"></image>
                         </svg> 
                     </div><!-- icon -->
                     <h3>Rudimentos</h3>
@@ -84,8 +84,8 @@
 
                 <li>
                     <div class="icon">
-                        <svg width="55" height="70">
-                            <image xmlns:xlink="./img/harmonizacao-baixo.svg" xlink:href="./img/harmonizacao-baixo.svg" src="./img/harmonizacao-baixo.png" width="55" height="70"></image>
+                        <svg viewBox="0 0 55 80" preserveAspectRatio="xMidYMid meet">
+                            <image xmlns:xlink="./img/harmonizacao-baixo.svg" xlink:href="./img/harmonizacao-baixo.svg" src="./img/harmonizacao-baixo.png"></image>
                         </svg> 
                     </div><!-- icon -->
                     <h3>Harmonização com baixo</h3>
@@ -94,8 +94,8 @@
                 
                 <li>
                     <div class="icon">
-                        <svg width="55" height="70">
-                            <image xmlns:xlink="./img/dinamica-banda.svg" xlink:href="./img/dinamica-banda.svg" src="./img/dinamica-banda.png" width="55" height="70"></image>
+                        <svg viewBox="0 0 55 80" preserveAspectRatio="xMidYMid meet">
+                            <image xmlns:xlink="./img/dinamica-banda.svg" xlink:href="./img/dinamica-banda.svg" src="./img/dinamica-banda.png"></image>
                         </svg> 
                     </div><!-- icon -->
                     <h3>Dinâmica com a banda</h3>
@@ -104,8 +104,8 @@
                 
                 <li>
                     <div class="icon">
-                        <svg width="55" height="70">
-                            <image xmlns:xlink="./img/dinamicas.svg" xlink:href="./img/dinamicas.svg" src="./img/dinamicas.png" width="55" height="70"></image>
+                        <svg viewBox="0 0 55 80" preserveAspectRatio="xMidYMid meet">
+                            <image xmlns:xlink="./img/dinamicas.svg" xlink:href="./img/dinamicas.svg" src="./img/dinamicas.png"></image>
                         </svg> 
                     </div><!-- icon -->
                     <h3>Dinâmicas</h3>
@@ -114,8 +114,8 @@
                 
                 <li>
                     <div class="icon">
-                        <svg width="55" height="70">
-                            <image xmlns:xlink="./img/pedal-duplo.svg" xlink:href="./img/pedal-duplo.svg" src="./img/pedal-duplo.png" width="55" height="70"></image>
+                        <svg viewBox="0 0 55 80" preserveAspectRatio="xMidYMid meet">
+                            <image xmlns:xlink="./img/pedal-duplo.svg" xlink:href="./img/pedal-duplo.svg" src="./img/pedal-duplo.png"></image>
                         </svg> 
                     </div><!-- icon -->
                     <h3>Pedal Duplo</h3>
@@ -124,8 +124,8 @@
                 
                 <li>
                     <div class="icon">
-                        <svg width="55" height="70">
-                            <image xmlns:xlink="./img/ritmos-brasileiros.svg" xlink:href="./img/ritmos-brasileiros.svg" src="./img/ritmos-brasileiros.png" width="55" height="70"></image>
+                        <svg viewBox="0 0 55 80" preserveAspectRatio="xMidYMid meet">
+                            <image xmlns:xlink="./img/ritmos-brasileiros.svg" xlink:href="./img/ritmos-brasileiros.svg" src="./img/ritmos-brasileiros.png"></image>
                         </svg> 
                     </div><!-- icon -->
                     <h3>Ritmos Brasileiros</h3>
@@ -134,8 +134,8 @@
                 
                 <li>
                     <div class="icon">
-                        <svg width="55" height="70">
-                            <image xmlns:xlink="./img/rudimentos.svg" xlink:href="./img/rudimentos.svg" src="./img/rudimentos.png" width="55" height="70"></image>
+                        <svg viewBox="0 0 55 80" preserveAspectRatio="xMidYMid meet">
+                            <image xmlns:xlink="./img/rudimentos.svg" xlink:href="./img/rudimentos.svg" src="./img/rudimentos.png"></image>
                         </svg> 
                     </div><!-- icon -->
                     <h3>Rudimentos</h3>
@@ -144,8 +144,8 @@
 
                 <li>
                     <div class="icon">
-                        <svg width="55" height="70">
-                            <image xmlns:xlink="./img/harmonizacao-baixo.svg" xlink:href="./img/harmonizacao-baixo.svg" src="./img/harmonizacao-baixo.png" width="55" height="70"></image>
+                        <svg viewBox="0 0 55 80" preserveAspectRatio="xMidYMid meet">
+                            <image xmlns:xlink="./img/harmonizacao-baixo.svg" xlink:href="./img/harmonizacao-baixo.svg" src="./img/harmonizacao-baixo.png"></image>
                         </svg> 
                     </div><!-- icon -->
                     <h3>Harmonização com baixo</h3>
@@ -154,8 +154,8 @@
                 
                 <li>
                     <div class="icon">
-                        <svg width="55" height="70">
-                            <image xmlns:xlink="./img/dinamica-banda.svg" xlink:href="./img/dinamica-banda.svg" src="./img/dinamica-banda.png" width="55" height="70"></image>
+                        <svg viewBox="0 0 55 80" preserveAspectRatio="xMidYMid meet">
+                            <image xmlns:xlink="./img/dinamica-banda.svg" xlink:href="./img/dinamica-banda.svg" src="./img/dinamica-banda.png"></image>
                         </svg> 
                     </div><!-- icon -->
                     <h3>Dinâmica com a banda</h3>

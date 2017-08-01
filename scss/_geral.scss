@@ -76,6 +76,11 @@ body {
         padding: .4em 2em;
         margin: 0 auto;
         display: table;
+
+        @include breakpoint(0 660px) {
+            font-size: $fontSizeBase * 2;
+        }         
+
     }
 
     .reset-margin-padding
