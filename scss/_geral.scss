@@ -38,7 +38,7 @@ body {
         margin: 0 0 1.2em 0;
     }
 
-    a, a:hover, a:visited 
+    a, a:hover, a:focus, a:visited 
     {
         text-decoration: none;
     }
@@ -48,16 +48,19 @@ body {
         @include make-row();
     }
 
-    .btn 
+    .btn,
+    .btn:focus 
     {
         background-color: $bgColorPadrao;
+        border: 0 none;
         border-radius: $radiusPadrao;
         color: $terciaryColor;
         font-family: $secondaryFont;
         font-weight: $secondaryWeight; 
         font-size: $fontSizeBtn;  
         text-align: center; 
-        line-height: 1em;    
+        line-height: 1em;  
+        outline: none;  
     }
 
     .btn-geral
@@ -67,7 +70,9 @@ body {
         padding: $paddingBtn;
     }
 
-    .btn-enviar
+    .btn-enviar,
+    .btn-enviar:hover,
+    .btn-enviar:focus
     {
         @extend .btn;
         background-color: $primaryColor;

@@ -1,6 +1,6 @@
 #depoimentos
 {
-    padding: 10em 0;
+    padding: 6em 0;
 
     background-image: url("../img/depoimento.jpg");
     background-size: cover;
@@ -25,6 +25,23 @@
     {
         @include make-lg-column(7);
         @include make-lg-column-push(11);
+
+        @include breakpoint(0 $largeDesktop) {
+             padding: 0 28em 5em;
+        } 
+
+        @include breakpoint($mobile) {
+             padding: 0 18em 5em;
+        } 
+
+        @include breakpoint(0 $tabletPortrait) {
+             padding: 0 10em 5em;
+        }   
+            
+        @include breakpoint(0 $smallCelular) {
+             padding: 0 5em 5em;
+        }           
+
     }
 
     .item-conteudo 
@@ -32,11 +49,16 @@
         @include make-lg-column(10);
         @include make-lg-column-pull(7);
 
+        @include breakpoint(0 $largeDesktop) {
+             padding: 0 5em;
+        } 
+
         h2 
         {
             color: $backgroundColorPrimary;
             //font-size: $fontSizeBase * 3.2;
             margin-top: 0;
+            line-height: 1em;
         }
 
         p 

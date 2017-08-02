@@ -1,40 +1,57 @@
 #assinatura
 {
-
     padding: 6em 0;
-
+ 
     article
     {
         background-color: $backgroundColorPrimary; 
         padding: 5em 0 3em;
         text-align: center;
+        overflow: hidden;
         transition: .5s background-color ease-in-out;
         @include make-sm-column(18);
         @include make-md-column(6);
         @include make-lg-column(6);
 
         @include breakpoint(0 $largeDesktop) {
-            padding: 3em 0 1em;
+            padding: 3em 0 0;
+        }
+        
+        @include breakpoint($mobile) {
+            margin-bottom: 2em;
+        }         
+
+        @include breakpoint($allCelular) {
+            margin-bottom: 3em;
         } 
 
         .cabecalho-assinatura
         {
-            @include breakpoint(0 ($allDesktop - 1)) {
+            @include breakpoint($mobile) {
                 width: 50%;
                 float: left;
             }   
+            @include breakpoint($allCelular){
+                width: 100%;
+                clear: both;
+            }
         }   
         
         ul 
         {
-            @include breakpoint(0 ($allDesktop - 1)) {
+            @include breakpoint($mobile) {
                 width: 50%;
                 float: right;
                 margin-bottom: 2em;
-            }  
+            } 
+
+            @include breakpoint($allCelular){
+                width: 100%;
+                clear: both;
+            }            
         }
 
-        .btn-enviar 
+        .btn-enviar
         {
             margin: 1em auto;
             padding-left: 1.5em;
@@ -44,18 +61,63 @@
                 font-size: $fontSizeBase * 2.3;
             } 
 
-            @include breakpoint(0 ($allDesktop - 1)) {
+            @include breakpoint($mobile) {
                 clear: both;
-                width: 300px;
+                //width: 300px;
                 max-width: 100%;
                 float: none;
-            }              
-                        
+            }    
+            
+            @include breakpoint($allCelular) {
+                font-size: $fontSizeBase * 2;
+            }
+            
+        }
+
+        .collapse
+        {
+            @include breakpoint($tabletPortrait) {
+                display: block !important;
+            }             
+        }
+
+        .item-assinatura 
+        {
+            @include breakpoint(0 $tabletPortrait) {
+                clear: both;
+            } 
+        }
+
+        .btn-info 
+        {
+            @include breakpoint($tabletPortrait) {
+                display: none;
+            } 
+
+            display: block;
+            background-color: $backgroundColorTerciary;
+            color: $backgroundColorPrimary;
+            font-size: $fontSizeBase * 1.6;
+            line-height: 1em;
+            padding: .5em 1.2em;
+            margin: 0 auto;
+
+            i 
+            {
+                margin-left: .5em;
+            }
+
         }
 
         &.destaque
         {
             background-color: $backgroundColorSecondary;
+
+            @include breakpoint($allCelular) {
+                margin-top: 6em;
+                padding: 4em 0 2em;
+            } 
+
         }
 
     }
@@ -78,6 +140,7 @@
         text-transform: uppercase;
         @include breakpoint(0 $largeDesktop) {
             font-size: $fontSizeBase * 2.8;
+            line-height: 1.2em;
         }           
     }
 
@@ -86,12 +149,24 @@
         position: relative;
         padding-bottom: 5em;
 
+        @include breakpoint(0 $allCelular) {
+            padding-bottom: 2em;
+            width: 350px;
+            max-width: 100%;
+            margin: 0 auto;
+        }  
+
         h4 
         {
             font-size: $fontSizeBase * 6;
             text-transform: uppercase;
             line-height: 1em;
             @extend .reset-margin-padding;
+
+            @include breakpoint(0 $allCelular) {
+                font-size: $fontSizeBase * 5.5;
+                line-height: 1.2em;
+            }  
 
             span 
             {
@@ -122,7 +197,22 @@
             box-sizing: border-box;
             text-align: center;
             margin-top: -8px;
-            margin-left: 10px;            
+            margin-left: 10px;    
+            
+            @include breakpoint($mobile) {
+                position: absolute;
+                left: 20px;
+                top: 10px;
+                margin-top: 0;               
+            }   
+            
+            @include breakpoint(0 $allCelular) {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-top: -8px;
+            }              
+
         }
 
     }

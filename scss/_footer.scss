@@ -27,6 +27,7 @@
 
     .duvidas 
     {
+        @include make-md-column(4);
         @include make-lg-column(4);
 
         h3 
@@ -62,6 +63,7 @@
 
     .ft-geral
     {
+        @include make-md-column(4);
         @include make-lg-column(3); 
 
         h4 
@@ -89,6 +91,8 @@
     .formularioInscricao
     {
         background-color: rgba(0,0,0,.7);
+
+        //@include make-md-column(5);
         @include make-lg-column(5);
 
         h3 

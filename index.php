@@ -20,10 +20,13 @@
     <?php include("./incs/footer.php");?>
 
     <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
     <script>
 
         $(document).ready(function(){
+
+
             //Slider Depoimentos
             $('.owl-depoimentos').owlCarousel({
                 animateIn: 'fadeIn',
@@ -39,6 +42,17 @@
                 autoplayTimeout: 5000,
                 autoplayHoverPause: true
             });
+
+            $('#plano-1, #plano-2').on('shown.bs.collapse', function () {
+                //console.log("mostrou...");
+                $(this).parent().find('.btn-info').html("Menos Informações<i class='fa fa-caret-up' aria-hidden='true'></i>");
+            });//
+
+            $('#plano-1, #plano-2').on('hidden.bs.collapse', function () {
+                //console.log("escondeu...");
+                $(this).parent().find('.btn-info').html("Mais Informações<i class='fa fa-caret-down' aria-hidden='true'></i>");
+            });//
+
         });
 
     </script>

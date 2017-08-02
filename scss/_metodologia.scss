@@ -16,7 +16,7 @@
         padding: 0 0 8em;      
 
         @include breakpoint(0 $allDesktop) {
-            padding: 0;
+            padding: 0 1em;
         }          
 
         &.metodosLista
@@ -28,7 +28,7 @@
             }  
 
             @include breakpoint(0 660px) {
-               padding: 2em 1em;
+               padding: 2em;
             } 
 
         }        

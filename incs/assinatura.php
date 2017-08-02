@@ -13,13 +13,17 @@
                 </aside>
             </div>
             <!-- end .cabecalho-assinatura -->
-            <ul>
-                <li><p>Pagamento via cartão de crédito</p></li>
-                <li><p><strong>Acesso ilimitado</strong> a plataforma</p></li>
-                <li><p><strong>Cancele quando quiser</strong></p></li>
-                <li><p>Garantimos sua satisfação</p></li>
-            </ul>
-            <a href="#" class="btn-enviar">Assinar com mês grátis</a>
+            <div id="plano-1" class="collapse">
+                <ul>
+                    <li><p>Pagamento via cartão de crédito</p></li>
+                    <li><p><strong>Acesso ilimitado</strong> a plataforma</p></li>
+                    <li><p><strong>Cancele quando quiser</strong></p></li>
+                    <li><p>Garantimos sua satisfação</p></li>
+                </ul>
+                <a href="#" class="btn-enviar">Assinar com mês grátis</a>
+            </div>
+            <!-- end .collapse -->
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#plano-1">Mais Informações<i class="fa fa-caret-down" aria-hidden="true"></i></button>
         </article>
         <!-- end .item-assinatura -->   
 
@@ -35,13 +39,17 @@
                 </aside>
             </div>
             <!-- end .cabecalho-assinatura -->
-            <ul>
-                <li><p>Pagamento via cartão de crédito</p></li>
-                <li><p><strong>Acesso ilimitado</strong> a plataforma</p></li>
-                <li><p><strong>Cancele quando quiser</strong></p></li>
-                <li><p>Garantimos sua satisfação</p></li>
-            </ul>
-            <a href="#" class="btn-enviar">Assinar com mês grátis</a>
+            <div id="plano-2" class="collapse">
+                <ul id="plano-2">
+                    <li><p>Pagamento via cartão de crédito</p></li>
+                    <li><p><strong>Acesso ilimitado</strong> a plataforma</p></li>
+                    <li><p><strong>Cancele quando quiser</strong></p></li>
+                    <li><p>Garantimos sua satisfação</p></li>
+                </ul>
+                <a href="#" class="btn-enviar">Assinar com mês grátis</a>
+            </div>
+            <!-- end .collapse --> 
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#plano-2">Mais Informações<i class="fa fa-caret-down" aria-hidden="true"></i></button>               
         </article>
         <!-- end .item-assinatura -->  
 
@@ -57,7 +65,7 @@
                 </aside>
             </div>
             <!-- end .cabecalho-assinatura -->
-            <ul>
+            <ul id="plano-3">
                 <li><p>Pagamento via cartão de crédito</p></li>
                 <li><p><strong>Acesso ilimitado</strong> a plataforma</p></li>
                 <li><p><strong>Cancele quando quiser</strong></p></li>
