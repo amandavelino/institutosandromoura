@@ -10,7 +10,7 @@
     overflow: hidden; //hidden
     position: relative;
 
-    @include breakpoint(0 $celularPortrait) {
+    @include breakpoint($smallCelular) {
         height: auto;
         padding-bottom: 5em;
     }
@@ -22,7 +22,7 @@
     overflow: hidden;
     width: 100%;
 
-    @include breakpoint(0 $tabletPortrait) {
+    @include breakpoint($allCelular) {
         position: absolute;
         left: 0;
         bottom: 0;
@@ -30,23 +30,23 @@
         float: none;
     }
 
-    @include breakpoint(0 $celularPortrait) {
+    @include breakpoint($smallCelular) {
         position: relative;
     }
 
     .inscricao
     {
-        @include make-sm-column(9);
+        //@include make-sm-column(9);
         @include make-md-column(7);
         @include make-lg-column(6);
         background-color: rgba(0,0,0,.7);
         float: right !important;
 
-        @include breakpoint(0 $tabletPortrait) {
+        @include breakpoint($allCelular) {
             width: 100%;
         }
 
-        @include breakpoint(0 $celularPortrait) {
+        @include breakpoint($smallCelular) {
             padding: 0;
         }
     }
@@ -57,19 +57,19 @@
         border: 0 none;
         padding: 0 2em 4em;
 
-        @include breakpoint(0 $tabletPortrait) {
+        @include breakpoint($allCelular) {
             padding: 0 1em 4em;
         }        
     }
 
     .box-form 
     { 
-        @include breakpoint(0 $tabletPortrait) {
+        @include breakpoint($allCelular) {
            @include make-sm-column(9);
            @include make-md-column(9);
         }           
 
-        @include breakpoint(0 $tabletPortrait) {
+        @include breakpoint($allCelular) {
            padding-left: 0;
            padding-right: 0;
         }         
@@ -83,11 +83,11 @@
         font-size: $fontSizeBase * 3;
         line-height: 1em;
 
-        @include breakpoint(0 $tabletPortrait) {
+        @include breakpoint($allCelular) {
             font-size: $fontSizeBase * 2.8;
         }    
 
-        @include breakpoint(0 $celularPortrait) {
+        @include breakpoint($smallCelular) {
             font-size: $fontSizeBase * 2.4;
         }         
 
@@ -111,6 +111,11 @@
     {
         display: block;
         margin: 3em 0;
+
+        @include breakpoint($largeDesktopMax) {
+            margin: 2em 0;
+        } 
+
     }
 
     input
@@ -136,14 +141,16 @@
 
         &.btn-enviar
         {
-            @include breakpoint(max-width $largeDesktop) {
-                width: 300px;
+            @include breakpoint($largeDesktopMax) {
+                //width: 300px;
                 max-width: 100%;
                 margin: 0 auto;
                 float: none;
+                max-width: 100%;
+                //box-sizing: border-box;
             }      
             
-            @include breakpoint(max-width $tabletPortrait) {
+            @include breakpoint($allCelular) {
                 width: 100%;
             }                
 

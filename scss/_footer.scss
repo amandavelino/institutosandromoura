@@ -1,6 +1,6 @@
 #footer
 {
-    padding: 6em 0;
+    padding: 6em 0 4em;
     background-image: url("../img/sandrofooter.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,7 +8,17 @@
 
     width: 100%;
     overflow: hidden;//hidden
-    position: relative;     
+    position: relative;  
+    
+    @include breakpoint($mobile) {
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
+    }    
+
+    @include breakpoint($allCelular) {
+        padding-left: 0;
+        padding-right: 0;
+    }    
 
     * 
     {
@@ -20,19 +30,33 @@
         font-weight: $primaryWeight;
     }
 
-    .cont-int
+    .container
     {
-        @include make-row();
+        position: relative;
+        @include breakpoint($mobile) {
+            padding-bottom: 380px;
+        } 
+        @include breakpoint($customMedia) {
+           padding-bottom: 0;
+        }         
     }
 
     .duvidas 
     {
-        @include make-md-column(4);
+        @include make-xs-column(8);
+        @include make-sm-column(8); 
+        @include make-md-column(3);
         @include make-lg-column(4);
+
+        @include breakpoint($customMedia) {
+            width: 100%;
+            margin-bottom: 3em;
+        } 
 
         h3 
         {
             font-size: $fontSizeBase * 3.2; 
+            line-height: 1.2em;
             margin: 0 0 1em 0;
             padding: 0;
         }
@@ -40,6 +64,10 @@
         p 
         {
             font-size: $fontSizeBase * 1.9;
+            @include breakpoint($largeDesktopMax) {
+                font-size: $fontSizeBase * 1.6;
+                line-height: 1.4em;
+            } 
         }
 
         .txt-icon 
@@ -49,12 +77,27 @@
             i 
             {
                 float: left;
-                padding: 0 .5em 0 0;                
+                padding: 0 .5em 0 0;    
+
+                @include breakpoint($largeDesktopMax) {
+                    font-size: 0;
+                    display: none;
+                }  
+
+                @include breakpoint($mobile) {
+                    display: block;
+                    font-size: 3em;
+                }                 
+
             }
 
             p 
             {
                 float: left;
+                @include breakpoint($mobile) {
+                    font-size: 1.8em;
+                    line-height: 1.6em;
+                }                 
             }
 
         }
@@ -63,14 +106,64 @@
 
     .ft-geral
     {
-        @include make-md-column(4);
+        @include make-md-column(3);
         @include make-lg-column(3); 
+
+        @include breakpoint($mobile) {
+            clear: both;
+            width: 33%;
+            position: absolute;
+            left: 0;
+            top: 450px;
+        }
+
+        @include breakpoint($customMedia) {
+            width: 100%;
+            position: relative;
+            top: 0;
+            margin-bottom: 5em;
+        } 
+
+        &.scd
+        {
+            @include breakpoint($mobile) {
+                left: 33%;
+            }
+
+            @include breakpoint($customMedia) {
+                left: 0;
+            } 
+
+        }
+
+        &.thr
+        {
+            @include breakpoint($mobile) {
+                left: initial;
+                right: 0;
+            }
+            @include breakpoint($customMedia) {
+                margin-bottom: 3em;
+            } 
+        }
 
         h4 
         {
             font-size: $fontSizeBase * 2;
-            margin: 0 0 .5em 0;
+            line-height: 1.2em;
+            margin: 0 0 .8em 0;
             padding: 0;
+
+            @include breakpoint($largeDesktopMax) {
+                margin: 0;
+                height: 60px;
+            }  
+
+            @include breakpoint($mobile) {
+                height: auto;
+                margin: 0 0 1em 0;
+            } 
+
         }
 
         ul 
@@ -78,6 +171,10 @@
             list-style: none;
             margin: 2em 0 0 2em;
             padding: 0;
+
+            @include breakpoint($largeDesktopMax) {
+                margin: .5em 0 0 0;
+            } 
         }
 
         li 
@@ -91,9 +188,19 @@
     .formularioInscricao
     {
         background-color: rgba(0,0,0,.7);
-
-        //@include make-md-column(5);
+        @include make-xs-column(8);
+        @include make-sm-column(8);
+        @include make-md-column(6);
         @include make-lg-column(5);
+
+        @include breakpoint($mobile) {
+            float: right !important;
+        } 
+
+        @include breakpoint($customMedia) {
+            width: 100%;
+            float: none !important;
+        }
 
         h3 
         {
@@ -114,7 +221,10 @@
 
         fieldset
         {
-            padding: 0 1em 4em;
+            padding: 0 0 4em;
+            @include breakpoint($largeDesktopMax) {
+                padding: 0 0 2em;
+            } 
         }
 
         input 
@@ -126,7 +236,20 @@
 
     .ft-bottom
     {
+        clear: both;
         text-align: center;
+
+        @include breakpoint($mobile) {
+            width: 100%;
+            position: absolute;
+            bottom: 30px;
+        } 
+
+        @include breakpoint($customMedia) {
+           position: relative;
+           bottom: 0;
+           padding-top: 3em;
+        } 
 
         .redes-sociais 
         {
@@ -145,6 +268,10 @@
                 width: 30px;
                 height: 30px;
 
+                @include breakpoint($customMedia) {
+                    margin: 0 1em;
+                }                 
+
                 * 
                 {
                     color: $fifthColor;
@@ -160,6 +287,9 @@
             margin: 1em auto;
             padding: 0;
             width: 60%;
+            @include breakpoint($customMedia) {
+                width: 90%;
+            } 
         }
 
         p 
@@ -176,9 +306,21 @@
         text-align: right;
         padding-right: $fontSizeBase * 2;
 
+        @include breakpoint($mobile) {
+            position: absolute;
+            right: 0;
+            bottom: -3em;
+        } 
+
+        @include breakpoint($customMedia) {
+           position: relative;
+           margin-top: 1em;
+        } 
+
         p 
         {
             font-size: $fontSizeBase * 1.4;
+            margin-bottom: 0;
         }
 
     }

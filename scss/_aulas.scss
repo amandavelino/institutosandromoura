@@ -4,7 +4,7 @@
     background-color: $backgroundColorSecondary;
     padding: 3em 0 5em;
 
-    @include breakpoint(0 $tabletPortrait) {
+    @include breakpoint($allCelular) {
         padding: 4em 0;
     }      
 
@@ -13,14 +13,14 @@
         padding: 2em 0 3em;
         text-align: center;
 
-        @include breakpoint(0 $tabletPortrait) {
+        @include breakpoint($allCelular) {
             padding-bottom: 1em;
         }   
 
         h2 
         {
             @extend .reset-margin-padding;
-            @include breakpoint(0 $tabletPortrait) {
+            @include breakpoint($allCelular) {
                 font-size: $fontSizeBase * 2.7;
                 line-height: 1em;
             } 
@@ -47,7 +47,7 @@
     {
         margin: 0 0 .5em 0;
         line-height: 1em;
-        @include breakpoint(0 $tabletPortrait) {
+        @include breakpoint($allCelular) {
             margin-top: 3em;
         }   
 
@@ -62,7 +62,7 @@
 
         figure 
         {
-            @include breakpoint(0 $tabletPortrait) {
+            @include breakpoint($allCelular) {
                 width: 50%;
                 float: left;
             }  
@@ -82,7 +82,7 @@
         {
             figure 
             {
-                @include breakpoint(0 $tabletPortrait) {
+                @include breakpoint($allCelular) {
                     float: right;
                 }  
             }

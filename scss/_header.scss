@@ -5,7 +5,7 @@ header#principal
     position: relative;
     overflow: hidden;
 
-    @include breakpoint(0 490px) {
+    @include breakpoint($smallCelular) {
         //para não quebrar o layout do header conforme versão 768px
         text-align: center;
     }
@@ -18,7 +18,7 @@ header#principal
         float: right !important;
         margin: 1.1em 0;
 
-        @include breakpoint(0 490px) {
+        @include breakpoint($smallCelular) {
             display: inline-block;
             float: none !important;
             padding-left: 1.5em;
@@ -38,11 +38,11 @@ header#principal
     padding: 0;
     margin: 0;
 
-    @include breakpoint(0 $tabletPortrait) {
+    @include breakpoint($allCelular) {
         float: left; 
     }  
 
-    @include breakpoint(0 490px) {
+    @include breakpoint($smallCelular) {
         float: none; 
     }      
     
@@ -56,7 +56,7 @@ header#principal
         width: 340px;
         height: auto;  
                      
-        @include breakpoint(0 $tabletPortrait) {
+        @include breakpoint($allCelular) {
             width: 280px; 
             max-width: 100%;
         }   

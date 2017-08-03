@@ -12,7 +12,7 @@
             <!-- end .txt-icon -->
             <div class="txt-icon">
                 <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
-                <p>Av. 4 de Outubro 557 <br>
+                <p>Av. 4 de Outubro, 557 <br>
                 Jabotão dos Guararapes. <br>
                 Pernambuco</p>
             </div>
@@ -21,19 +21,19 @@
         </div>
         <!-- end .duvidas -->
 
-        <div class="ft-geral">
+        <div class="ft-geral fst">
             <h4><a href="#">Dúvidas Frequentes</a></h4>
             <h4><a href="#">Preciso de Ajuda</a></h4>
         </div>
         <!-- end .ft-geral -->
 
-        <div class="ft-geral">
+        <div class="ft-geral scd">
             <h4><a href="#">Termos de Uso</a></h4>
             <h4><a href="#">Privacidade</a></h4>
         </div>
         <!-- end .ft-geral -->    
 
-        <div class="ft-geral">
+        <div class="ft-geral thr">
             <h4><a href="#">Pacotes Especiais</a></h4>
             <ul>
                 <li><a href="#">Metodologia para Professores</a></li>
@@ -76,7 +76,7 @@
             <hr />
             
             <p>Todos direitos reservados<br>
-            Instituo Sandro Moura<br>
+            Instituto Sandro Moura<br>
             CNPJ: 2222331515151/16</p>
 
         </div>
@@ -84,6 +84,9 @@
 
         <div class="madeBy">
             <p>Desenvolvimento: </p>
+            <a href="#" target="_blank" title="Desenvolvido por W2D Comunicação">
+                <img src="./img/w2d.svg" onerror="this.src='./img/w2d.png'" width="55" border="0">
+            </a>         
         </div>
         <!-- end .madeby -->
 

@@ -82,7 +82,7 @@ body {
         margin: 0 auto;
         display: table;
 
-        @include breakpoint(0 660px) {
+        @include breakpoint($customMedia) {
             font-size: $fontSizeBase * 2;
         }         
 
