@@ -5,10 +5,10 @@ $backgroundColorTerciary: #e03626;
 
 //Cores
 $primaryColor: #efc913; 
-$secondaryColor: #ccc;
-$terciaryColor: #303030;
-$quaternaryColor: #d3d3d3;
-$fifthColor : #111;
+$secondaryColor: #ccc;  
+$terciaryColor: #303030; 
+$quaternaryColor: #d3d3d3; 
+$fifthColor : #111; 
 
 //Fontes
 $primaryFont: "cardea-lining","Georgia","Times New Roman",serif;
@@ -22,17 +22,17 @@ $fontSizeBtn: 20px;
 $bgColorPadrao: #57575c; 
 $radiusPadrao  : 8px;
 $radius100: 100%;
-$paddingBtn: 15px 35px;
+$paddingBtn: 15px 35px;  
 
 //Grids
 $new-columns: 18;
-$new-gutter-width: 20px;
+//$new-gutter-width: $grid-gutter-width / 2;   
 
-$grid-columns: $new-columns;
-$grid-gutter-width: $new-gutter-width;
+//$grid-columns: $new-columns;
+//$grid-gutter-width: $new-gutter-width;
 
 //Medidas
-$paddingColumn: $grid-gutter-width;
+$paddingColumn: $grid-gutter-width; 
 
 //Media Queries
 $largeDesktop: 1200px;
@@ -48,4 +48,4 @@ $largCelular: 481 767px;
 $allCelular: 0 767px;
 
 $customMedia: 0 660px;
-$smallCelular: 0 480px;
+$smallCelular: 0 480px; 

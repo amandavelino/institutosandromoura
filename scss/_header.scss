@@ -4,6 +4,7 @@ header#principal
     padding: 5em 0;
     position: relative;
     overflow: hidden;
+    @include make-row($paddingColumn);
 
     @include breakpoint($smallCelular) {
         //para não quebrar o layout do header conforme versão 768px

@@ -20,7 +20,7 @@
 .formularioInscricao
 {
     overflow: hidden;
-    width: 100%;
+    @include make-row($paddingColumn);
 
     @include breakpoint($allCelular) {
         position: absolute;
@@ -34,11 +34,19 @@
         position: relative;
     }
 
+    .teste 
+    {
+        //@include make-lg-column(1);
+        @include make-lg-column(1);
+        height: 30px;
+    }
+
     .inscricao
     {
         //@include make-sm-column(9);
         @include make-md-column(7);
         @include make-lg-column(6);
+        
         background-color: rgba(0,0,0,.7);
         float: right !important;
 
@@ -53,12 +61,12 @@
 
     fieldset
     {
-        padding: 0;
+        padding: 0 ($grid-gutter-width * 2) 4em;
+        margin: 0;
         border: 0 none;
-        padding: 0 2em 4em;
 
         @include breakpoint($allCelular) {
-            padding: 0 1em 4em;
+           // padding: 0 0 4em;
         }        
     }
 
@@ -82,6 +90,7 @@
         font-weight: $secondaryWeight;
         font-size: $fontSizeBase * 3;
         line-height: 1em;
+        margin: 1.2em 0 .5em;
 
         @include breakpoint($allCelular) {
             font-size: $fontSizeBase * 2.8;
@@ -110,10 +119,10 @@
     label 
     {
         display: block;
-        margin: 3em 0;
+        margin: 2.5em 0;
 
         @include breakpoint($largeDesktopMax) {
-            margin: 2em 0;
+            //margin: 2em 0;
         } 
 
     }
@@ -141,6 +150,8 @@
 
         &.btn-enviar
         {
+            margin: 1.5em 0 0;
+
             @include breakpoint($largeDesktopMax) {
                 //width: 300px;
                 max-width: 100%;
