@@ -7,18 +7,18 @@
         </header>
 
         <ul class="lista-parceiros">
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
-            <li><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></li>
+            <li><span><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-other-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-other-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-other-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-other-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-other-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-map-tmp.jpg" alt="DW Drums" border="0"></span></li>
+            <li><span><img src="./img/icon-parceiros-other-tmp.jpg" alt="DW Drums" border="0"></span></li>
         </ul> 
 
     </div>

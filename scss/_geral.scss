@@ -35,7 +35,7 @@ body {
     p 
     {
         font-size: $fontSizeBase * 1.7;
-        margin: 0 0 1.2em 0;
+        margin: 0 0 1.4em 0;
     }
 
     a, a:hover, a:focus, a:visited 
@@ -76,11 +76,13 @@ body {
     {
         @extend .btn;
         background-color: $primaryColor;
-        font-size: $fontSizeBase * 2.5;
+        font-size: $fontSizeBase * 2.7;
         margin: 1em 0 0;
-        padding: .4em 2em;
+        padding: .5em 2em;
         margin: 0 auto;
         display: table;
+        //width: 400px;
+        max-width: 100%;
 
         @include breakpoint($customMedia) {
             font-size: $fontSizeBase * 2;

@@ -1,11 +1,20 @@
 header#principal
 {
     
-    padding: 5em 0;
+    padding: 65px 0 20px;
     position: relative;
     overflow: hidden;
     @include make-row($paddingColumn);
 
+    @include breakpoint($mobile) {
+        padding: 35px 0 0;
+    }
+
+    @include breakpoint($allCelular) {
+        padding-left: 45px;
+        padding-right: 45px;
+    }    
+    
     @include breakpoint($smallCelular) {
         //para não quebrar o layout do header conforme versão 768px
         text-align: center;
@@ -13,11 +22,10 @@ header#principal
 
     .btn-geral
     {
-        @include make-sm-column(5);
-        @include make-md-column(4);
-        @include make-lg-column(3);
-        float: right !important;
-        margin: 1.1em 0;
+        width: 195px;
+        font-weight: $terciaryWeight;
+        float: right;
+        margin: 20px 0;
 
         @include breakpoint($smallCelular) {
             display: inline-block;

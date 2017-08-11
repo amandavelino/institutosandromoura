@@ -1,19 +1,41 @@
 #metodologia
 {
 
-    padding: 6em 0;
+    padding: 6.5em 0 9em;
 
     @include breakpoint($mobile) {
-        padding: 4em 0 6em;
+        padding: 8.7em 0 8em;
     }
 
     @include breakpoint($smallCelular) {
-        padding: 3em 0;
+        padding: 5em 0;
     }    
+
+    .btn-enviar 
+    {
+        width: 400px;
+        max-width: 100%;
+
+        @include breakpoint($largeDesktopMax) {
+            margin-top: 1em;
+        }    
+
+        @include breakpoint($mobile) {
+            font-size: 25px;
+            margin-top: 0;
+            width: 340px;
+        } 
+        
+        @include breakpoint($smallCelular) {
+            font-size: 22px;
+            width: 100%;  
+        }                 
+         
+    }
 
     .container-row
     {
-        padding: 0 0 8em;      
+        padding: 0 0 10em;      
 
         @include breakpoint($mobile) {
             padding: 0 1em;
@@ -27,9 +49,13 @@
                 padding-top: 5em;
             }  
 
-            @include breakpoint($customMedia) {
-               padding: 2em;
-            } 
+            @include breakpoint($allCelular) {
+                padding: 50px 50px 0;
+            }    
+
+            @include breakpoint($smallCelular) {
+               padding: 40px 30px 0;
+            }            
 
         }        
     }
@@ -41,11 +67,11 @@
 
         @include breakpoint($mobile) {
             display: block;
-            margin: 2em 0 3em;
+            margin: 2em 0 7em;
         }
 
         @include breakpoint($smallCelular) {
-            margin: 3em 0 4em;
+            margin: 4em 0 5em;
         }
 
         article.midia 
@@ -54,35 +80,92 @@
         }
     }
 
-    article
+    .ft-row 
     {
-        @include make-md-column(8); 
-        @include make-lg-column(8);
 
-        @include breakpoint($mobile) {
-            width: 100%;
-        }   
-
-         &.midia
-         {
-            @include make-md-column(10);
-            @include make-lg-column(10);
+        article 
+        {
+            width: 41.6%;
+            float: left;
 
             @include breakpoint($mobile) {
-                padding: 4em 0 0;
                 width: 100%;
+            }  
+
+            @include breakpoint($allCelular) {
+                margin: 0 40px;
+                width: auto;
+            }              
+
+            @include breakpoint($smallCelular) {
+               margin: 0 20px;
+            }        
+
+            &.midia
+            {
+                width: 53.36%;
+                float: right;
+
+                @include breakpoint($mobile) {
+                    margin: 60px auto 90px;
+                    width: 100%;
+                }
+
+                @include breakpoint($allCelular) {
+                    padding: 0 40px;
+                    max-width: 100%;
+                }   
+
+                @include breakpoint($smallCelular) {
+                    padding: 0 20px;
+                    margin: 10px auto 20px;
+                }                  
+
             }
-         }
+        }
 
     }
 
-    .aula-metodologia 
+    .sc-row 
     {
-        .midia
+        article 
         {
+            width: 41.6%;
+            float: right;
+
             @include breakpoint($mobile) {
-                display: none;
-            }            
+                width: 100%;
+            }              
+
+            @include breakpoint($allCelular) {
+                margin: 0 40px;
+                width: auto;
+            }  
+
+            @include breakpoint($smallCelular) {
+                margin: 0 20px;
+            }      
+
+            &.midia
+            {
+                width: 53.36%;
+                float: left;
+                
+                @include breakpoint($mobile) {
+                    display: none;
+                }
+
+                @include breakpoint($allCelular) {
+                    padding: 0 40px;
+                    max-width: 100%;
+                    margin: 90px auto;
+                }                 
+
+                @include breakpoint($smallCelular) {
+                    padding: 0 20px;
+                }   
+
+            }
         }
     }
 
@@ -92,8 +175,17 @@
         font-family: $secondaryFont;
         font-size: $fontSizeBase * 3;
         line-height: 1em;
-        margin: .5em 0;
+        margin: .5em 0 1.2em;
 
+
+        @include breakpoint($largeDesktopMax) {
+            margin-top: 0;
+        }   
+
+        @include breakpoint($mobile) {
+            margin-bottom: 1.2em;
+        }
+    
         @include breakpoint($smallCelular) {
             font-size: $fontSizeBase * 2.6;
         }         
@@ -105,6 +197,11 @@
         color: $terciaryColor;
         font-size: $fontSizeBase * 1.7;
         line-height: 1.5em;
+
+        @include breakpoint($mobile) {
+            margin-bottom: 1em;
+        }           
+
     }
 }
 
@@ -122,13 +219,17 @@
         @include make-md-column(6);
         @include make-lg-column(6);
         list-style: none;
-        height: 70px;
-        margin-bottom: $paddingColumn * 3;
+        height: 75px;
+        margin-bottom: 6em;
         
+        @include breakpoint($mobile) {
+            margin-bottom: 4em;
+        }
+
         @include breakpoint($customMedia) {
             width: 100%;
             height: auto;
-            margin-bottom: .5em;
+            margin-bottom: 20px;
         }
 
         svg,
@@ -148,7 +249,7 @@
     .icon 
     {
         float: left;
-        padding-top: .8em;
+        padding-top: 0;
         padding-right: $paddingColumn;
     }
 
@@ -160,9 +261,11 @@
         margin: 0;
         padding: 0;
 
-        @include breakpoint($customMedia) {
+        @include breakpoint($mobile) {
             font-size: $fontSizeBase * 2.1;
-            line-height: 1em;
+        }  
+
+        @include breakpoint($customMedia) {
             margin: 0 0 .5em 0;
         } 
 

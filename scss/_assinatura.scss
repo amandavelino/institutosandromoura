@@ -1,7 +1,11 @@
 #assinatura
 {
-    padding: 6em 0;
+    padding: 8em 0 9em;
  
+    @include breakpoint($mobile) {
+        padding: 3em 0;
+    } 
+
     article
     {
         background-color: $backgroundColorPrimary; 
@@ -53,12 +57,15 @@
 
         .btn-enviar
         {
+            font-size: $fontSizeBase * 2.5;
             margin: 1em auto;
             padding-left: 1.5em;
             padding-right: 1.5em;
 
             @include breakpoint($largeDesktopMax) {
-                font-size: $fontSizeBase * 2.3;
+                //font-size: $fontSizeBase * 2.3;
+                padding-left: 2em;
+                padding-right: 2em;
             } 
 
             @include breakpoint($mobile) {
@@ -138,10 +145,7 @@
     h2 
     {
         text-transform: uppercase;
-        @include breakpoint($largeDesktopMax) {
-            font-size: $fontSizeBase * 2.8;
-            line-height: 1.2em;
-        }           
+        font-size: $fontSizeBase * 3.2;     
     }
 
     aside 

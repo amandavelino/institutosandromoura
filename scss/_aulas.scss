@@ -2,28 +2,36 @@
 {
 
     background-color: $backgroundColorSecondary;
-    padding: 3em 0 5em;
+    padding: 2em 0 8em;
 
     @include breakpoint($allCelular) {
         padding: 4em 0;
     }      
 
+    @include breakpoint($mobile) {
+        padding: 3em 0 5em;
+    }   
+    
+    h2 
+    {
+        @include breakpoint($smallCelular) {
+            font-size: 26px;
+            line-height: 1.2em;
+        }        
+    }
+
     header 
     {
-        padding: 2em 0 3em;
+        padding: 2em 0 5em;
         text-align: center;
 
-        @include breakpoint($allCelular) {
-            padding-bottom: 1em;
-        }   
+        @include breakpoint($smallCelular) {
+            padding-bottom: 3em;
+        }        
 
         h2 
         {
             @extend .reset-margin-padding;
-            @include breakpoint($allCelular) {
-                font-size: $fontSizeBase * 2.7;
-                line-height: 1em;
-            } 
 
         }
 
@@ -33,23 +41,107 @@
     {
         text-align: center;
 
+        @include breakpoint($mobile) {
+            width: 100%; 
+            margin-bottom: 70px;
+            overflow: hidden;
+        }
+
+        @include breakpoint($allCelular)
+        {
+            margin: 0 30px 70px;
+            width: auto;   
+            float: none;    
+        }
+
+        @include breakpoint($smallCelular)
+        {
+            margin-bottom: 50px;   
+        }
+
+        &:last-child
+        {
+            @include breakpoint($mobile) {
+                margin-bottom: 0;
+            }            
+        }
+
         figure 
         {
+
+            position: relative;
+            display: table; 
+            height: 320px;
+            width: 100%;
+
+            @include breakpoint($largeDesktopMax)
+            {
+                height: 235px;
+            } 
+
+            @include breakpoint($mobile) {
+                width: 50%;
+                float: left;
+            }
+
+            @include breakpoint($smallCelular) {
+                width: 100%;
+            }              
+                        
+            span 
+            {
+                *position: absolute; 
+                top: 50%; 
+                display: table-cell; 
+                vertical-align: middle;    
+                width: 100%;   
+                text-align: center;         
+            }
+
             img 
             {
-                max-width: 100%;
+                display:block;
+                *position: relative;
+                top: -50%;
+                margin: 0 auto;
+                @include breakpoint($largeDesktopMax) {
+                    max-width: 100%;
+                } 
             }
+        }
+
+        &.md 
+        {
+            figure 
+            {
+
+                @include breakpoint($mobile) {
+                    float: right;
+                }
+
+            }
+
+            .txt-artigo 
+            {
+                @include breakpoint($mobile) {
+                    text-align: right;
+                }      
+                        
+                @include breakpoint($smallCelular)
+                {
+                    text-align: center;
+                }
+
+            }
+
         }
 
     }
 
     h3 
     {
-        margin: 0 0 .5em 0;
+        margin: 15px 0;
         line-height: 1em;
-        @include breakpoint($allCelular) {
-            margin-top: 3em;
-        }   
 
     }
 
@@ -76,6 +168,21 @@
         {
             padding: 0 1em;
             margin-bottom: -1em;
+
+            @include breakpoint($mobile) {
+                padding: 5em 0;
+                text-align: left;
+                float: right;
+                width: 47%;
+            }
+
+            @include breakpoint($smallCelular)
+            {
+                padding: 0;
+                text-align: center;
+                width: 100%;                
+            }
+
         }
 
         &.md

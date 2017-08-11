@@ -1,11 +1,22 @@
 #parceiros 
 {
 
-    padding: 6em 0;
+    padding: 8em 0 10em;
+
+    @include breakpoint($mobile) {
+        padding: 60px 0 20px;
+    } 
+
+    @include breakpoint($smallCelular) {
+        padding: 50px 0 20px;
+    }   
 
     header 
     {
         padding: 0 0 4em;
+        @include breakpoint($smallCelular) {
+            padding-bottom: 0;
+        }          
     }
 
     h2,
@@ -15,17 +26,58 @@
         margin: 0;
     }
 
+    h2
+    {
+        @include breakpoint($smallCelular) {
+            font-size: $fontSizeBase * 2.5;
+        }         
+    }
+
     .lista-parceiros 
     {
 
         padding: 0;
         margin: 1em 0;
+        text-align: center;
 
         li 
         {
-            display: inline-block;
-            margin-bottom: $grid-gutter-width * 2;
+
+            @include make-xs-column(3);
+            @include make-sm-column(3);
+            @include make-md-column(3);
             @include make-lg-column(3);
+            height: 90px;
+            margin: 0 0 3em;
+            padding: 0;
+            position: relative;
+            display: table;
+
+            @include breakpoint($mobile) {
+                padding: 10px;
+            } 
+
+            @include breakpoint($smallCelular) {
+                width: 33.33%;
+            }
+
+            span
+            {
+                *position: absolute;
+                top: 50%;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            img 
+            {
+                display:block;
+                *position: relative;
+                top: -50%;     
+                margin: 0 auto;  
+                max-width: 100%;         
+            }
+
         }
     }
 

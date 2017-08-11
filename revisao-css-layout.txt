@@ -1,0 +1,11 @@
+Considerações ISM:
+
+colunas: 18;
+largura da coluna usada: 52;
+container-large: 1250px;
+container terá 18px de padding de cada lado;
+row terá -18px de margem de cada lado;
+
+Portanto eu fiz os espaçamentos proporcional a 18px, como no formulário de inscrição,
+no layout tem
+

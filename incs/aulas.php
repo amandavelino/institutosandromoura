@@ -8,7 +8,9 @@
 
         <article class="item-aula">
             <figure>
-                <img src="./img/facilidade-sistema.jpg" alt="Facilidade no uso do sistema" border="0">
+                <span>
+                    <img src="./img/facilidade-sistema.jpg" alt="Facilidade no uso do sistema" border="0">
+                </span>
             </figure>
             <div class="txt-artigo">
                 <h3>Facilidade no uso do sistema</h3>
@@ -20,7 +22,9 @@
 
         <article class="item-aula md">
             <figure>
-                <img src="./img/assista-online.jpg" alt="Assista online onde você estiver" border="0">
+                <span>
+                    <img src="./img/assista-online.jpg" alt="Assista online onde você estiver" border="0">
+                </span>
             </figure>
             <div class="txt-artigo">
                 <h3>Assista online onde você estiver</h3>
@@ -32,7 +36,9 @@
         
         <article class="item-aula">
             <figure>
-                <img src="./img/entre-aproveite.jpg" alt="É só entrar e aproveitar!" border="0">
+                <span>
+                    <img src="./img/entre-aproveite.jpg" alt="É só entrar e aproveitar!" border="0">
+                </span>
             </figure>
             <div class="txt-artigo">
                 <h3>É só entrar e aproveitar!</h3>

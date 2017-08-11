@@ -2,7 +2,7 @@
 
     <div class="container">
         
-        <div class="aula-metodologia">
+        <div class="aula-metodologia ft-row">
 
             <div class="container-row">
 
@@ -42,7 +42,7 @@
 
     <div class="container">
 
-        <div class="aula-metodologia">
+        <div class="aula-metodologia sc-row">
 
             <div class="container-row">
 
