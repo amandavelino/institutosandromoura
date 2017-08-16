@@ -25,11 +25,6 @@
         color: $backgroundColorPrimary;
     }
 
-    p 
-    {
-        font-weight: $primaryWeight;
-    }
-
     .container
     {
         position: relative;
@@ -66,7 +61,7 @@
 
         p 
         {
-            font-size: $fontSizeBase * 1.9;
+            font-size: $fontSizeBase * 1.7;
             @include breakpoint($largeDesktopMax) {
                 font-size: $fontSizeBase * 1.6;
                 line-height: 1.4em;

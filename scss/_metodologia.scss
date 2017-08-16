@@ -195,7 +195,7 @@
     p 
     {
         color: $terciaryColor;
-        font-size: $fontSizeBase * 1.7;
+        font-size: $fontSizeBase * 1.6;
         line-height: 1.5em;
 
         @include breakpoint($mobile) {
